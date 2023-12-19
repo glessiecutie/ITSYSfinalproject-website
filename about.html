@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" type="image/x-icon">
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/410540781_360667026652802_7089292557509781626_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHTD9-oECPyjfqNoaBppyyC3BCzgs66pCDcELOCzrqkIGFSku7fS4K2VPoUappFMJ43t0JeEGLt04MF-6ylAzpa&_nc_ohc=fwwMi8AFeBwAX-GI2_2&_nc_ht=scontent.fmnl25-1.fna&oh=03_AdQ1Cn1TbrozU8VpslD8e4CTvnm6LP390R6pn_rHAG6L8w&oe=65A79FA4); 
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-image: url(https://scontent.fmnl25-5.fna.fbcdn.net/v/t1.15752-9/385538352_266017256483465_3375028749498907273_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEx484JC7RBSew_09iUkycPC71gnx0a3v0LvWCfHRre_UH4csaKlCbpm-coCQBjT9SYHcqimhrRYTuY_IYcLTKX&_nc_ohc=0TFcwQOgwKEAX-3pmYt&_nc_oc=AQmphKxMn430Rix_-yp7y0AHq53cPElDXmntgLGsl9UK1MRvlJA9DFKoftdMS_lyQ-4&_nc_ht=scontent.fmnl25-5.fna&oh=03_AdSYlOzGLMLutDQaJyH8hhUGain6LvNAhi627LTRKctYIw&oe=65A7DDB7); 
+            background-size: cover;
+            color: orange;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        p {
+            color: white;
+        }
+
+        .headings {
+            animation: slideFromLeft 3s ease-in;
+            font-size: 500%;
+            
+        }
+
+        h2 {
+            color: orange;
+            font-size: 240%;
+        }
+       h3{
+            color: white;
+            font-size: 240%;
+       }
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .left-image,
+        .right-image {
+            position: center ;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: auto;
+        }
+
+        .left-image {
+            left: 18px;
+        }
+
+        .right-image {
+            right: 18px;
+        }
+
+        nav {
+            background-color: rgb(83, 62, 169);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: orange;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                width: 100%;
+                float: none;
+            }
+
+            .left-image,
+            .right-image {
+                width: 60px;
+            }
+        }
+    .fimagesleft, .fimagesright{
+        width: 50%;
+    }
+    .fimagesleft {
+    
+           
+            transform: translateX(-50%);
+            width: 50%;
+    } 
+    .fimagesright {
+ 
+            right: 50%;
+            transform: translateX(50%);
+            width: 50%;
+          
+    }
+    ul.buttomnav{
+        color: white;
+        background-color: rgb(83, 62, 169);
+        list-style-type: none;
+        padding: 5px;
+
+        text-align: center;
+
+        }
+
+    </style>
+    <title>ASCOT Information Technology</title>
+</head>
+
+<body>
+
+ 
+    <header>
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/410974315_741862487839297_475419958015931208_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHcCqKNFVZym2xZcws50yR-heSbIBSJltqF5JsgFImW2rbmPS1BY4Ed-_QYlx2lAt-0RwabH1JF5tfmOxcDhVT9&_nc_ohc=TFudOrQfOFQAX_EuTGN&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdRawx5v0epN_u4-w6ionDalC1cK2oGUUeoA0mWGohaHTg&oe=65A7134D" alt="Left Image" class="left-image">
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" alt="Right Image" class="right-image">
+        <div class="heading">
+            <h1>School of Information Technology</h1>
+            <p>(Aurora State College of Technology)</p>
+            </div>
+    </header>
+
+
+    <nav>
+        <a href="home.html" target="_self" style="color: orange;">Home</a>
+        <a href="events.html" target="_self" style="color: orange;">Events</a>
+        <a href="about.html" target="_self" style="color: orange;">About</a>
+        <a href="contact.html" target="_self" style="color: orange;">Contact</a>
+        <a href="developer.html" target="_self" style="color: orange;">Developer</a>
+    </nav>
+
+
+
+    <section id="about">
+        <h2>Our Purpose</h2>
+        <p>Welcome to our website! We are a dedicated team of individuals who have come together to create this platform with a shared purpose and vision. Our goal in creating this website is to provide a valuable resource for individuals seeking information and guidance in the field of Information Technology.
+ 
+            The reason behind the creation of this website stems from our passion for IT and our desire to share our knowledge and experiences with others. We understand that the world of technology can be complex and ever-changing, and navigating through it can sometimes feel overwhelming. That's why we wanted to create a space where individuals, whether they are students, professionals, or simply tech enthusiasts, can find reliable and up-to-date information to enhance their understanding of IT concepts and trends.
+             
+            Through this website, we aim to offer a wide range of resources, including informative articles, tutorials, and practical tips, to help individuals navigate the world of Information Technology with confidence. We believe that by providing accessible and relevant information, we can empower individuals to make informed decisions, develop their skills, and stay abreast of the latest advancements in the field.
+             
+            Additionally, we aspire to foster a sense of community and collaboration among our users. We encourage individuals to engage in discussions, share their insights, and connect with like-minded individuals who share a passion for IT. We believe that by coming together and exchanging ideas, we can collectively enhance our knowledge and contribute to the growth and development of the IT community.
+             
+            Thank you for visiting our website, and we hope that you find the information and resources here valuable and inspiring. We are committed to continuously updating and expanding our content to ensure that we provide the most relevant and useful information to our users. We invite you to explore our website, join our community, and embark on an enriching journey in the world of Information Technology.</p>
+
+            <h2>What is Information Technology?</h2>
+            <p>Information Technology, often abbreviated as IT, is an expansive field that encompasses the use, development, and management of technology to process, store, transmit, and retrieve information. It plays a crucial role in virtually every aspect of our modern lives, from communication and business operations to healthcare, education, entertainment, and beyond.
+ 
+                In today's rapidly evolving digital landscape, Information Technology has become an indispensable tool that drives innovation, enhances productivity, and revolutionizes industries. It empowers individuals and organizations to harness the power of technology to solve complex problems, streamline processes, and make informed decisions.
+                 
+                The persuasive power of Information Technology lies in its ability to transform the world around us. It enables us to connect with people across the globe, breaking down barriers and fostering collaboration on an unprecedented scale. It opens up new avenues for education, providing access to knowledge and resources that were once unimaginable. It revolutionizes industries, creating new business models, and driving economic growth.
+                 
+                Information Technology empowers individuals to unleash their creativity and turn their ideas into reality. It offers endless opportunities for innovation, whether through developing cutting-edge software applications, designing user-friendly interfaces, or harnessing the power of data to gain valuable insights. The potential for personal and professional growth in the field of IT is vast, with a wide range of career paths and opportunities for continuous learning and development.
+                 
+                Moreover, Information Technology plays a vital role in addressing global challenges. It contributes to sustainable development by enabling efficient resource management, promoting renewable energy solutions, and facilitating the transition to a more environmentally conscious society. It has the power to improve healthcare outcomes, enhance cybersecurity measures, and create a more inclusive and connected world.
+                 
+                In conclusion, Information Technology is more than just a field of study or a tool. It is a catalyst for progress, a driving force behind innovation, and a gateway to endless possibilities. Its persuasive power lies in its ability to shape the future, empower individuals, and transform industries. By embracing Information Technology, we can unlock our full potential, create positive change, and shape a better world for generations to come.</p>
+
+                <br><br><br><br><hr>
+
+            <h3>Connect</h3>    
+        <p class="links" style="font-size: 100%;">
+            <a href="https://www.facebook.com/ascotscitech" target="_balnk">ASCOT BSIT</a> <br />
+            <a href="https://www.facebook.com/ascotaitechs" target="_balnk">ASCOT BSIT STUDENT</a> <br />
+            <a href="https://www.facebook.com/ascotofficialpage" target="_balnk">ASCOT OFFICIAL</a>
+        </p>
+    </section>
+
+    
+    <footer>
+        &copy; 2023 School of Information Technology. All rights reserved.
+    </footer>
+
+
+    </p>

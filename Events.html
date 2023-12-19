@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" type="image/x-icon">
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/410540781_360667026652802_7089292557509781626_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHTD9-oECPyjfqNoaBppyyC3BCzgs66pCDcELOCzrqkIGFSku7fS4K2VPoUappFMJ43t0JeEGLt04MF-6ylAzpa&_nc_ohc=fwwMi8AFeBwAX-GI2_2&_nc_ht=scontent.fmnl25-1.fna&oh=03_AdQ1Cn1TbrozU8VpslD8e4CTvnm6LP390R6pn_rHAG6L8w&oe=65A79FA4); 
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-image: url(https://scontent.fmnl25-5.fna.fbcdn.net/v/t1.15752-9/385538352_266017256483465_3375028749498907273_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEx484JC7RBSew_09iUkycPC71gnx0a3v0LvWCfHRre_UH4csaKlCbpm-coCQBjT9SYHcqimhrRYTuY_IYcLTKX&_nc_ohc=0TFcwQOgwKEAX-3pmYt&_nc_oc=AQmphKxMn430Rix_-yp7y0AHq53cPElDXmntgLGsl9UK1MRvlJA9DFKoftdMS_lyQ-4&_nc_ht=scontent.fmnl25-5.fna&oh=03_AdSYlOzGLMLutDQaJyH8hhUGain6LvNAhi627LTRKctYIw&oe=65A7DDB7); 
+            background-size: cover;
+            color: orange;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        p {
+            color: white;
+        }
+
+        .headings {
+            animation: slideFromLeft 3s ease-in;
+            font-size: 500%;
+            
+        }
+
+        h2 {
+            color: orange;
+            font-size: 240%;
+        }
+       h3{
+            color: white;
+            font-size: 240%;
+       }
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .left-image,
+        .right-image {
+            position: center ;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: auto;
+        }
+
+        .left-image {
+            left: 18px;
+        }
+
+        .right-image {
+            right: 18px;
+        }
+
+        nav {
+            background-color: rgb(83, 62, 169);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: orange;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                width: 100%;
+                float: none;
+            }
+
+            .left-image,
+            .right-image {
+                width: 60px;
+            }
+        }
+    .fimagesleft, .fimagesright{
+        width: 50%;
+    }
+    .fimagesleft {
+    
+           
+            transform: translateX(-50%);
+            width: 50%;
+    } 
+    .fimagesright {
+ 
+            right: 50%;
+            transform: translateX(50%);
+            width: 50%;
+          
+    }
+    ul.buttomnav{
+        color: white;
+        background-color: rgb(83, 62, 169);
+        list-style-type: none;
+        padding: 5px;
+
+        text-align: center;
+
+        }
+    </style>
+    <title>ASCOT Information Technology</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/410974315_741862487839297_475419958015931208_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHcCqKNFVZym2xZcws50yR-heSbIBSJltqF5JsgFImW2rbmPS1BY4Ed-_QYlx2lAt-0RwabH1JF5tfmOxcDhVT9&_nc_ohc=TFudOrQfOFQAX_EuTGN&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdRawx5v0epN_u4-w6ionDalC1cK2oGUUeoA0mWGohaHTg&oe=65A7134D" alt="Left Image" class="left-image">
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" alt="Right Image" class="right-image">
+        <div class="heading">
+            <h1>School of Information Technology</h1>
+            <p>(Aurora State College of Technology)</p>
+            </div>
+    </header>
+
+    <nav>
+        <a href="home.html" target="_self" style="color: orange;">Home</a>
+        <a href="events.html" target="_self" style="color: orange;">Events</a>
+        <a href="about.html" target="_self" style="color: orange;">About</a>
+        <a href="contact.html" target="_self" style="color: orange;">Contact</a>
+        <a href="developer.html" target="_self" style="color: orange;">Developer</a>
+    </nav>
+    <section id="events">
+    <hr>
+    <h3>Latest Activities</h3>
+    <hr>
+    <br>
+    <h1>The School of Information Technology has been actively participating in various activities, events and conferences. Here are some of the latest events attended:</h1>
+
+    <br>
+    <h4>Celebration of ASCOT 30th Anniversary!</h4>
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/410564136_734554585385718_689502521781240103_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGsKelGIIzM2dWv8bKh2AUsy2yjDU-gW1fLbKMNT6BbV2Bwci6dDQ2NrQmXoVYJcI4kJl0MRlUUK-dJpUNiIt0p&_nc_ohc=BgBfivN9KHAAX9c7W2U&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCcn8b0XalX4E3_hkfkD44R7vWd2VIfwAIX809xW8ZKUA&oe=658618DA" alt="error" width="200" style="padding-left: 15px;">
+    <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/410985407_734555012052342_7682064686938236962_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGpJS4twHQ8z4qmkex4x0_6Lz8aQrwUNh8vPxpCvBQ2HwbmHaQLGoX8Uh8_j9iWYZSuB6_uGXCXj8HJEowuT8O2&_nc_ohc=EvF62eYKH8QAX9JATaO&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfB-IiCrQ9RcjIOgST5RgRsjZWFJBuxrEssS24iCOPNCBg&oe=6585AC44" alt="error" width="200" style="padding-left: 15px;">
+    <img src="https://scontent.fmnl25-2.fna.fbcdn.net/v/t39.30808-6/411896635_734483225392854_8389612286603817856_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a73e89&_nc_eui2=AeEnX4HasPhaKFCzWPoka109QKrxSJygIjFAqvFInKAiMfBT0PtGfS-FubIJ7nidK3YUtsBFg8MpJ5ygjr1VwFLU&_nc_ohc=HAzqFpX3cOwAX_C_P4g&_nc_ht=scontent.fmnl25-2.fna&oh=00_AfAnsVUBFvzLzRZqt4M9Qq0CL3AQtSCixvnYWXegizrmog&oe=65867F90" alt="error" width="180" style="padding-left: 15px;">
+    <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/409834598_734484098726100_4742687226684278157_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a73e89&_nc_eui2=AeHw1qPRXI5p5WkmrX4vqEjK9cZ_B3zwp371xn8HfPCnfhkeZrF_ySw2ztyicc66n7dLqF3wqxvrfYCU0t6izXUn&_nc_ohc=5439NFAVQT0AX-a_dmc&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfBrsiEK6PfEELdFYQZXdvZnlDFJ3gBCHCgDOej5eVhs4g&oe=6586D1DB" alt="error" width="180" style="padding-left: 15px;">
+    <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/409847755_734484738726036_3695650017888331132_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a73e89&_nc_eui2=AeHqSws_tTMYyb4h5zh8TQlR6brKKq2dlw_pusoqrZ2XDyL3OB1qsmpinBcwilQ9XryacNUR1mv9zobzIktZ5Jir&_nc_ohc=0YUgZdP30hgAX8IQwrt&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCtt7uum9sXugPvOo7Id9Cd_LNEZM2rfrVYz38jNzryfQ&oe=6586432E" alt="error" width="220" style="padding-left: 15px;">
+
+    <p>As the anniversary approached, the school was abuzz with excitement. Students, teachers, and staff were all involved in the preparations. There were so many activities that made the school's founding anniversary celebration truly special and memorable.
+         
+        Every year, our school's founding anniversary is marked by a series of vibrant and exciting activities that bring together students, teachers, and parents in a grand celebration. This year, the festivities were more colorful and lively than ever, featuring a Color Fun Run, a Christmas Float Competition, a Color and Lights Competition, a Christmas Carol Competition, a Mr. & Ms. Ascot pageant, and a Battle of the Bands.
+        <br><br>
+         
+        The celebration kicked off with the Color Fun Run. Students and teachers participated in this exhilarating event.
+        Dressed in white shirts, they ran from Baler Fishport to the school Gymnasium while volunteers showered them with colored powder. The run was not just about speed, but also about enjoying the moment and celebrating fitness and health. The sight of everyone covered in vibrant hues, laughing and cheering, set a joyful tone for the rest of the celebration.
+         
+        Next was the Christmas Float Competition. Each school was tasked to design and create a Christmas float that represented a chosen theme. The creativity and craftsmanship displayed were truly impressive. The floats, adorned with twinkling lights and festive decorations, paraded around the school grounds, much to the delight of the spectators.
+         <br><br>
+        The Color and Lights Competition was another highlight of the celebration. Classrooms were transformed into dazzling displays of colors and lights. Each school competed to create the most festive and creative decorations. The competition fostered teamwork and creativity among students and made the school environment even more festive and welcoming.
+         <br><br>
+        The Christmas Carol Competition brought the spirit of the holiday season to the celebration. Choirs from each school showcased their vocal talents by performing classic and contemporary Christmas carols. The harmonious voices of the students, singing songs of joy and peace, filled the school with a warm and festive atmosphere.
+         <br><br>
+        The Mr. & Ms. Ascot pageant was a much-anticipated event. Students representing each school competed in categories such as talent, casual wear, and formal wear. The pageant was not just about beauty and style, but also about confidence, poise, and personality. It was a platform for students to express themselves and inspire others.
+         <br><br>
+        The celebration concluded with the Battle of the Bands. Student bands took to the stage, performing a variety of music genres. The air was filled with electrifying performances that had everyone cheering and dancing. It was a testament to the musical talent and passion of the students especially from the School of Information Technology (SoIT).
+         <br><br>
+        Each of these activities brought a unique flavor to the celebration, making it a memorable experience for everyone. They highlighted the creativity, talent, and unity of the school community. More than just a celebration of our school's founding anniversary, it was a celebration of our shared experiences, our diversity, and our collective spirit.
+        <br><br>
+        The school's founding anniversary was not just a day of celebration, but also a day of unity and camaraderie of students from School of Information (SoIT). It was a day that reminded everyone of the school's mission and values. It was a day that brought the school community closer together.
+         <br><br>
+        As the students, teachers, and staff left the school grounds that day, they carried with them a renewed sense of pride and belonging. They looked forward to the coming year, ready to face new challenges and create new memories.
+         <br><br>
+        And so, the tradition of celebrating the school's founding anniversary continued, year after year, strengthening the bond of the school community and keeping the spirit of the school alive.</p>
+
+
+    <p>
+        <br />
+
+        <hr>
+
+        <h4>Seminar: Promoting Respect, Inclusivity, Diversity, and Equality</h4>
+
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/407417386_726136226227554_7873861581375312238_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEMg1dOU2rDhdZt9ipJZt6fTlJyy4wIW3lOUnLLjAhbedCjQXiIxh-cI_2uj8_A63f9BSruMZcJUG0-pAXyIsol&_nc_ohc=yIrccl-ibWEAX86XvsR&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfA5406eVl0bdxpK_6wK8J7DrmZgINPajYPBpUqaYysTfA&oe=65859823" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/407424210_726136306227546_8977823803492016001_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGufWfCpWLsLVYr5L_MczXnVBByGH8ISrBUEHIYfwhKsFkEkBdK3PsIcrbSegGaiKmF-WIyKp1_yxIEonKIK3t1&_nc_ohc=GFhgrfT-pA8AX_P2TW-&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCg94qSJDtMCqvueoFs1IEMtVrbRWyVaxCDfbrSsUS9JQ&oe=6586A6A0" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/407381384_726136689560841_999788831051636894_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeH9llNT5w3wCgjICidaliWYhutyGXQSf2GG63IZdBJ_YRVdLB6kLbOhNuVSkIb0nMv18nBGvmze0cVfwcnaoCgJ&_nc_ohc=JquKyJmDUboAX9EPJZT&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCnnH7fvAiPaqmlwcNDMbDPStl016-b0SuUcxwjVxOIng&oe=65858727" alt="error" width="220" style="padding-left: 15px;">
+       
+        <p>On December 1, 2023, ASCOT's "Gobyerno de Agham Politika" made history with their first event. The seminar focused on promoting Respect, Inclusivity, Diversity, and Equality, setting a commendable standard. This event also marked the establishment of the Students' Organization of Political Science, a significant step towards championing PRIDE and creating a supportive community. The theme of the event was "Baklang Lumalaban: Navigating spaces of Resistance towards Building Safe Spaces for the LGBTQIA+ Community." <br><br> ASCOT and the School of Information Technology, known as AITECHS, fully support these initiatives and wish them the best of luck in their future endeavors. Let's continue to embrace and empower the LGBTQIA+ community together. </p>
+
+        <br />
+
+        <hr>
+        <h4>ASCOT Delegates HIC Philippines 2023</h4>
+
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/401849286_765107002296539_481390556672488395_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGknERkFe4IpDelDZH84YuzCIigkOEENxYIiKCQ4QQ3Fu2yZrubpzomdKCiTNLNOUlEy-R50Dc0vIKwQeEFgN7U&_nc_ohc=QG8Q8MtQxT8AX_PGTkF&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfDM-rbM_nPUmnrrbsL1Xj3tPTa0rhqvJxVbQ418VS5AAA&oe=6585FAD7" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/400399112_765118325628740_659162601514287013_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHwtWC6CljgmTtWYPWDDBHn71jxHHXB22LvWPEcdcHbYpVjdXmFi9YfCbQFi0HFgsW33_pJd8FL5ABIhB20H2nh&_nc_ohc=jp0MqOEHZ1oAX-fYvyC&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfDkUCJE7OpoPuV55ggeEw5BBqhxfWOjnHZ1bLxWkG8G2g&oe=65856769" alt="error" width="220" style="padding-left: 15px;">
+        
+        <p>
+            ASCOT's School of Information Technology selected students attend the Hyper Interdisciplinary Conference in the Philippines 2023 with the theme  “Convergence of Reformative Technologies for Localized Solutions” held at the University of Santo Tomas, November 11. <br> <br>
+            
+            The Hyper Interdisciplinary Conference was organized by Leave a Nest Philippines, which intends to promote the integration of transformational technology to address certain difficulties faced by the nation and provide attendees with the knowledge and skills necessary to successfully negotiate the complexities of introducing and utilizing cutting-edge technology in this thriving sector. <br><br>
+            
+             Dr. Yevgeny Aster T. Dulla, Managing Director of Leave a Nest Philippines, starts the event with his opening remarks followed by a message from Engr. Raymond Marquez, Manager of TOMASinno Center of the University of Santo Tomas.
+            <br><br>
+            The conference was divided into 3-panel sessions and 1 keynote session with different keynote speakers and topics: Convergence of Reformative Technologies for Localized Solutions, The Outlook of Education: Exploring the Integration of Cyber Technology, Dormant Resource Utilization for Health and Well-being, and Forest Resource Utilization: Taking Advantage and Care of Philippine Biodiversity. <br><br>
+            
+            These captivating keynote sessions were discussed by esteemed Panelist-Commenters and Keynote Speakers, some of these are Engr. Lorilyn P. Daquioag the Waste4Good Founder and CEO of Stamina4Space, Maya 3 & Maya 4 Satellite Team Member, Dr. Ria Canlas the Executive Member of National Innovation Council and Director of Center for Innovation of National University, Engr. Kevin Fucan the Senior Consultant of the Intellectual Property Office of the Philippines, Mr. Rocell Vicente Acting Chief, Planning and Project Management Division Philippine Space Agency, Lawrence V. Madriaga, Ph.D. Campus Director of Philippine Science High School Main Campus, and Randolf S. Sasota, Ph.D. Officer-in-Charge Science and Technology Manpower Education Research and Promotions Division (DOST-SEI). <br><br>
+            
+            There were also a research splash and poster sessions presented by 16 individuals/groups and only 6 were awarded Best in Research Poster and only 2 for Best in Presenter. <br><br>
+            
+            The event formally ended with a closing remarks from Engr. Ronezza Delos Santos, the Director of Leave a Nest Philippines thanked and assured that everyone has their takeaways in the said event.
+            
+        </p>
+        <br />
+
+        <hr>
+        <h4>Celebrating Unity and Sportsmanship: ASCOT Intramural</h4>
+
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/394601191_705927704915073_987380228248637012_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGTXCVet97ZEo88t9e0YZvMWHAojaFdds5YcCiNoV12zqiBPqoTgNOUQLu29q9S1Ec_6Whbtu-gP3TbZ6druyvt&_nc_ohc=xTbJJUb0SYQAX8Wfk4L&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfDlIoTh0A7Y_jt1qf-4VAYeeSl3_RVyexcGgph2w4FXow&oe=6585182D" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/395224951_705928258248351_9210423762684225993_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeF6WaYlmL-ArYdw90RubcD2fsFeXfmtbyJ-wV5d-a1vIqiPFpROkMvDG7vGR5Fsz-XqOgHepWs1a10EZgARi_wg&_nc_ohc=3kH7wzi7thAAX_cxnkZ&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfCAqqNgTxIkhk8Lk87lxl_6xhlK5yV9NRO4hH6xSPkzWA&oe=6585B234" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/395755214_705936178247559_4978269874781162420_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFbC3v066584WaZTpt4_DW-EX0CbpYVHhgRfQJulhUeGKFERNNO32yljXGSSwtXYCo1a3s_iE9IuoMIH7gPQc5_&_nc_ohc=BQKduJB0n00AX_rpAMm&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfBM5rDIAfXpm4FJfRIUXMntrrvDTdAfNTKVnfSJVfZSPw&oe=6582F46F" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/395453872_705936521580858_7935436346333429508_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFcCPHdqgKKMjOw9ep0Eyyq4ck-npEFJNXhyT6ekQUk1QyjCr_StSrceUwT3-mfwfcMc7kOgjQJafOafsW9YH61&_nc_ohc=ur82F5vOGjcAX_qUrdu&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfClAwrUptsCI38q2iFPncL5s9MYX1iJptWMHF3DS0Qq4Q&oe=6582F77F" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/395233403_705937221580788_435294854800024355_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHNDiVkrAOxcAGMZnNUCyE2p9kFg3EA2Qqn2QWDcQDZCkeidwgXeIFDVDbM5phXfEvcWFDGZwGBgMvt1NCnSF4p&_nc_ohc=PGQSwnzOH20AX-W70j3&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfAik5MSBMpJeLV7q_DeneZ4H1r-jEu1CHvsr09rzZhnIA&oe=65838DB2" alt="error" width="220" style="padding-left: 15px;">
+
+        <p>In every academic institution, there is a time when students come together to showcase their athletic abilities, foster camaraderie, and celebrate the spirit of healthy competition. At Aurora State College of Technology (ASCOT), this event is known as the ASCOT Intramural. Held annually, the ASCOT Intramural is a much-anticipated event that brings together students from different programs and departments to engage in various sports and recreational activities. It is a time when the ASCOT community comes alive with excitement, unity, and a shared passion for sportsmanship. <br><br>
+            From the first whistle to the final buzzer, our athletes are giving their all on the field. We witness moments of sheer determination, skill, and teamwork that remind us why we love sports. However, it's not just about the points. SoIT participants, whether they are newcomers or seasoned pros, unite under the banner of sportsmanship, discipline, and a genuine passion for the game. They show us that it's not always about winning; it's about the journey, personal growth, and the friendships that are formed along the way. These athletes exemplify the true spirit of sports, inspiring us with their dedication and reminding us of the values that make sports so special.
+        </p>
+
+        <br>
+        <hr>
+
+
+
+
+        <h4>Juan Welcomes</h4>
+
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/379950604_686349416872902_1579144464992154379_n.jpg?stp=dst-jpg_p720x720&_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFSVQseEYDEZ0P_qVlrFLkGgSPtsIW53taBI-2whbne1mbDJ9CyPucN1hZqsZG9rHEDvBhnsYrS-ojuO0P4YUSz&_nc_ohc=XOy17HnksrgAX-5APxe&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfAdqje9k2KNLvhkwnksq3CFqPMjH_FPtD5Uedi2Am51qw&oe=6585D882" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/380267101_686350560206121_6481760386240144272_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGchTnb9QmNRxt6iwebki56AJYK6bIYea4Algrpshh5rvgIE_C09dlTPiHU5a7O6lU12oBOqzmOrYRGehMZLq9k&_nc_ohc=M-2STIzC9u8AX_td1-T&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCUKJnNn5D3BmL5vIuVN4w4Cxod2a7GDideP9PI6N3sUw&oe=6585EF96" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/380991556_686350660206111_7554750122570515410_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFpzAJBh2-dww8XBngAQmG80l8C3H3eCPvSXwLcfd4I-6fbD2pTi71XcGeLG1BGB4-P1ql-DUAHDMJ4xlpDo3HX&_nc_ohc=Xx6pbT5MLzsAX-fareK&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfBOplWaUFLYwNcVgkz-cvgPU7fZfZfwrem_41iajs0mqA&oe=6586BD56" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/380889981_686350866872757_7728135493969423615_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE5ow8MgjT-lcs-dyxiSMTOKaSdVgbf140ppJ1WBt_XjRDkZF1oTGvqUZguykHILVWK-SqfiCyF4yR7X_QpEe0A&_nc_ohc=dKx1uvXMYJEAX_IBzNq&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfA62wqk2EJevhkLBNbBwhQIMSwgJRzYh2bmbjO2ByjOvg&oe=65857510" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/380884680_686350910206086_1506036072877259586_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEgcXFwXO3Nwnh0LuOL7S_E0MVWUW81_JPQxVZRbzX8k3IVPxjnxpHe_8ngcHNnIJgeEXgGpua8NjAem1nqMdzQ&_nc_ohc=TMhZ9APL9_QAX_uDGoV&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfBjG9Xn87p7B8JRLOi8W8-TyVw5ZLUwATzlGTjImlrqLA&oe=6586107C" alt="error" width="220" style="padding-left: 15px;">
+
+
+        <p>
+            The Juan Welcome event in September 2023 marked the beginning of an exciting academic year at ASCOT. Each school within the campus had their booths, but the School of Information Technology (SoIT) stole the show by giving students the freedom to showcase their talents. The day started with an energetic opening ceremony at the gymnasium, where faculty members set the tone for the festivities. The event was captured in a collection of captivating photos, showcasing the vibrant energy of ASCOT students. The carnival-like atmosphere in the General Education area allowed students to discover hidden talents, connect with peers, and celebrate the diversity of the school. Special thanks were given to the Ponkanitas for their support in the Videoke Booth, making Juan Welcome 2023 a memorable day. The spirit of unity and support will continue throughout the year, creating more memorable moments for ASCOT.</p>
+
+            <br>
+            <hr>
+            
+            <h3>Platforms</h3>    
+            <p class="links" style="font-size: 100%;">
+                <a href="https://www.facebook.com/ascotscitech" target="_balnk">ASCOT BSIT</a> <br />
+                <a href="https://www.facebook.com/ascotaitechs" target="_balnk">ASCOT BSIT STUDENT</a> <br />
+                <a href="https://www.facebook.com/ascotofficialpage" target="_balnk">ASCOT OFFICIAL</a>
+            </p>
+
+    </section>
+    <br><br><br><br>
+
+
+
+    <footer>
+        &copy; 2023 School of Information Technology. All rights reserved.
+    </footer>
+
+</body>
+</html>

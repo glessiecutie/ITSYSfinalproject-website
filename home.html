@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" type="image/x-icon">
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/410540781_360667026652802_7089292557509781626_n.png?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHTD9-oECPyjfqNoaBppyyC3BCzgs66pCDcELOCzrqkIGFSku7fS4K2VPoUappFMJ43t0JeEGLt04MF-6ylAzpa&_nc_ohc=fwwMi8AFeBwAX-GI2_2&_nc_ht=scontent.fmnl25-1.fna&oh=03_AdQ1Cn1TbrozU8VpslD8e4CTvnm6LP390R6pn_rHAG6L8w&oe=65A79FA4); 
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-image: url(https://scontent.fmnl25-5.fna.fbcdn.net/v/t1.15752-9/385538352_266017256483465_3375028749498907273_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEx484JC7RBSew_09iUkycPC71gnx0a3v0LvWCfHRre_UH4csaKlCbpm-coCQBjT9SYHcqimhrRYTuY_IYcLTKX&_nc_ohc=0TFcwQOgwKEAX-3pmYt&_nc_oc=AQmphKxMn430Rix_-yp7y0AHq53cPElDXmntgLGsl9UK1MRvlJA9DFKoftdMS_lyQ-4&_nc_ht=scontent.fmnl25-5.fna&oh=03_AdSYlOzGLMLutDQaJyH8hhUGain6LvNAhi627LTRKctYIw&oe=65A7DDB7); 
+            background-size: cover;
+            color: orange;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        p {
+            color: white;
+        }
+
+        .headings {
+            animation: slideFromLeft 3s ease-in;
+            font-size: 500%;
+            
+        }
+
+        h2 {
+            color: orange;
+            font-size: 240%;
+        }
+       h3{
+            color: white;
+            font-size: 240%;
+       }
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .left-image,
+        .right-image {
+            position: center ;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: auto;
+        }
+
+        .left-image {
+            left: 18px;
+        }
+
+        .right-image {
+            right: 18px;
+        }
+
+        nav {
+            background-color: rgb(83, 62, 169);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: orange;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                width: 100%;
+                float: none;
+            }
+
+            .left-image,
+            .right-image {
+                width: 60px;
+            }
+        }
+    .fimagesleft, .fimagesright{
+        width: 50%;
+    }
+    .fimagesleft {
+    
+           
+            transform: translateX(-50%);
+            width: 50%;
+    } 
+    .fimagesright {
+ 
+            right: 50%;
+            transform: translateX(50%);
+            width: 50%;
+          
+    }
+    ul.buttomnav{
+        color: white;
+        background-color: rgb(83, 62, 169);
+        list-style-type: none;
+        padding: 5px;
+
+        text-align: center;
+
+        }
+    
+    
+
+    </style>
+    <title>ASCOT Information Technology</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/410974315_741862487839297_475419958015931208_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHcCqKNFVZym2xZcws50yR-heSbIBSJltqF5JsgFImW2rbmPS1BY4Ed-_QYlx2lAt-0RwabH1JF5tfmOxcDhVT9&_nc_ohc=TFudOrQfOFQAX_EuTGN&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdRawx5v0epN_u4-w6ionDalC1cK2oGUUeoA0mWGohaHTg&oe=65A7134D" alt="Left Image" class="left-image">
+        <img src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.15752-9/400911972_1025407925178722_1176973244269116359_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEOhzuky3Xu5rSwq3t_xGq9dU-LvrbgmWh1T4u-tuCZaOWXISRc3YsPZ7beg3xxYacTSSoPODe6gUturPRB3uDr&_nc_ohc=f_5WlEpa3-kAX9T2C1X&_nc_ht=scontent.fmnl8-1.fna&oh=03_AdTvYBtX5sqhiJeeAEM8skFu6IkTpYYdY1g-TtYJvz54Mg&oe=65A6F8C4" alt="Right Image" class="right-image">
+        <div class="heading">
+            <h1>School of Information Technology</h1>
+            <p>(Aurora State College of Technology)</p>
+            </div>
+    </header>
+
+    <nav>
+        <a href="home.html" target="_self" style="color: orange;">Home</a>
+        <a href="events.html" target="_self" style="color: orange;">Events</a>
+        <a href="about.html" target="_self" style="color: orange;">About</a>
+        <a href="contact.html" target="_self" style="color: orange;">Contact</a>
+        <a href="developer.html" target="_self" style="color: orange;">Developer</a>
+    
+    </nav>
+
+
+    <section id="news">
+        <hr>
+        <h2>Featured</h2>
+        <hr>
+        <br><br>
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/407424210_726136306227546_8977823803492016001_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGufWfCpWLsLVYr5L_MczXnVBByGH8ISrBUEHIYfwhKsFkEkBdK3PsIcrbSegGaiKmF-WIyKp1_yxIEonKIK3t1&_nc_ohc=GFhgrfT-pA8AX_P2TW-&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCg94qSJDtMCqvueoFs1IEMtVrbRWyVaxCDfbrSsUS9JQ&oe=6586A6A0" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/401849286_765107002296539_481390556672488395_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeGknERkFe4IpDelDZH84YuzCIigkOEENxYIiKCQ4QQ3Fu2yZrubpzomdKCiTNLNOUlEy-R50Dc0vIKwQeEFgN7U&_nc_ohc=QG8Q8MtQxT8AX_PGTkF&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfDM-rbM_nPUmnrrbsL1Xj3tPTa0rhqvJxVbQ418VS5AAA&oe=6585FAD7" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/394601191_705927704915073_987380228248637012_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGTXCVet97ZEo88t9e0YZvMWHAojaFdds5YcCiNoV12zqiBPqoTgNOUQLu29q9S1Ec_6Whbtu-gP3TbZ6druyvt&_nc_ohc=xTbJJUb0SYQAX8Wfk4L&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfDlIoTh0A7Y_jt1qf-4VAYeeSl3_RVyexcGgph2w4FXow&oe=6585182D" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/380889981_686350866872757_7728135493969423615_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE5ow8MgjT-lcs-dyxiSMTOKaSdVgbf140ppJ1WBt_XjRDkZF1oTGvqUZguykHILVWK-SqfiCyF4yR7X_QpEe0A&_nc_ohc=dKx1uvXMYJEAX_IBzNq&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfA62wqk2EJevhkLBNbBwhQIMSwgJRzYh2bmbjO2ByjOvg&oe=65857510" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/380781701_688489709992206_4377562616776642017_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHkPVDqAjYmS9xfSzM5tGbWbqC_Py7mWxVuoL8_LuZbFcYyZ3X_iiqEU6Rl-rMYgT_neZOV3jgnsscxLgAZmMYf&_nc_ohc=M4zpfsfZ0dkAX9IcNg_&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfAzspq_JrNh1wGeGANgiHuOCkoE47TDtJqDZriB8EvC6Q&oe=65866843" alt="error" width="220" style="padding-left: 15px;">
+
+
+       <p>Sneak peak of latest happenings</p>
+
+        <hr>
+        <hr>
+
+        <h2>SoIT <br> Mission & Vision</h2>
+        <img src="https://scontent.fmnl25-4.fna.fbcdn.net/v/t39.30808-6/288999095_10159557011856839_4842153682016476795_n.png?_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_eui2=AeHX1JjHIoxgBXYDElUGAFNmN2a7fb0bA9s3Zrt9vRsD23ijS_KGpJJFXbL0ezF5Z68DoTfEo33aS_jzv954w9TX&_nc_ohc=v_IabK_xnnsAX_hnjzI&_nc_ht=scontent.fmnl25-4.fna&oh=00_AfCoQhG9UFLvzA2cYsTW1eW09ubCJtR2fxuQlTSMtPf6Dw&oe=6585A21B" alt="error" width="500">
+        <br><br>
+
+    
+        <br>
+        <hr>
+        <hr>
+
+        <h2>Discover ASCOT SoIT</h2>
+        <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/395711755_705935254914318_8186988944551606851_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGjlsI4RTejSL4xmkQNRIkux6KBlWTOi2rHooGVZM6LavwAu7VIiw8Om4dGrahOuvI5H7C4I8eLeCGOFJOx2AUx&_nc_ohc=uZ1MWCf4RwQAX-YP_7y&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfBzhtgdRBpE8EGDEa63odUmD4IgroQ-oOYBr_E06J8kWA&oe=6584091F" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/394260787_705935928247584_1335175439110889171_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE4AovPpr3HglpCTZLItcRqFt-pnrt6ceAW36meu3px4EBYlV0D1yNLTY9UTN-N0N6TWUNq5WJYBUAJmiQO0K8Z&_nc_ohc=Eqyj_vk2CcgAX-Ou-qO&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfB_-8I5W9EyDyIxjN9_TuBQWZ_EsJ5Ooc1H0ysqhhhm8A&oe=658282BB" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-5.fna.fbcdn.net/v/t39.30808-6/395755214_705936178247559_4978269874781162420_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFbC3v066584WaZTpt4_DW-EX0CbpYVHhgRfQJulhUeGKFERNNO32yljXGSSwtXYCo1a3s_iE9IuoMIH7gPQc5_&_nc_ohc=BQKduJB0n00AX_rpAMm&_nc_ht=scontent.fmnl25-5.fna&oh=00_AfBM5rDIAfXpm4FJfRIUXMntrrvDTdAfNTKVnfSJVfZSPw&oe=6582F46F" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/395453872_705936521580858_7935436346333429508_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFcCPHdqgKKMjOw9ep0Eyyq4ck-npEFJNXhyT6ekQUk1QyjCr_StSrceUwT3-mfwfcMc7kOgjQJafOafsW9YH61&_nc_ohc=ur82F5vOGjcAX_qUrdu&_nc_ht=scontent.fmnl25-3.fna&oh=00_AfClAwrUptsCI38q2iFPncL5s9MYX1iJptWMHF3DS0Qq4Q&oe=6582F77F" alt="error" width="220" style="padding-left: 15px;">
+        <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/395233403_705937221580788_435294854800024355_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHNDiVkrAOxcAGMZnNUCyE2p9kFg3EA2Qqn2QWDcQDZCkeidwgXeIFDVDbM5phXfEvcWFDGZwGBgMvt1NCnSF4p&_nc_ohc=PGQSwnzOH20AX-W70j3&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfAik5MSBMpJeLV7q_DeneZ4H1r-jEu1CHvsr09rzZhnIA&oe=65838DB2" alt="error" width="220" style="padding-left: 15px;">
+        <br>
+        <br>
+
+        <a href="Events.html" target="_self" style="color: black;">view full</a>
+
+        <br>
+        <hr>
+        <hr>
+    </section>
+
+    <section>
+    <ul class="buttomnav">
+    <li><a href="contact.html" target="_self" style="color: orange;">Contact & Connect</a><li>
+    <li><a href="about.html" target="_self" style="color: orange;">About Us</a><li>
+    </ul>
+    </section>
+
+    <br><br>
+
+    <footer>
+        &copy; 2023 School of Information Technology. All rights reserved.
+    </footer>
+
+</body>
+</html>
